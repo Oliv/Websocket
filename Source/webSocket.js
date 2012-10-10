@@ -54,8 +54,9 @@ var MooWebSocket = new Class({
     setType: function(type) {
         if (this.cnx && this.cnx.readyState === this.cnx.OPEN)
             this.cnx.binaryType = ['blob', 'arraybuffer', 'arraybufferview'].contains(type) ? type : 'Blob';
-    },
 
+        return this;
+    },
 
     log: function() {
         if (this.options.logging)

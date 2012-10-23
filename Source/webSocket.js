@@ -4,7 +4,7 @@ description: WebSocket Class
 
 license: MIT-style
 
-author: Olivier Gasc (gasc.olivier@gmail.com)
+authors: Olivier Gasc (gasc.olivier@gmail.com)
 
 requires:
 - Array

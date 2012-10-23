@@ -1,4 +1,5 @@
 /*
+---
 description: WebSocket Class
 
 license: MIT-style
@@ -12,6 +13,7 @@ requires:
 - JSON (optional)
 
 provides: [MooWebSocket]
+...
 */
 
 var MooWebSocket = new Class({
@@ -53,7 +55,7 @@ var MooWebSocket = new Class({
 
     setType: function(type) {
         if (this.cnx && this.cnx.readyState === this.cnx.OPEN)
-            this.cnx.binaryType = ['blob', 'arraybuffer', 'arraybufferview'].contains(type) ? type : 'Blob';
+            this.cnx.binaryType = ['blob', 'arraybuffer', 'arraybufferview'].contains(type) ? type : 'blob';
 
         return this;
     },

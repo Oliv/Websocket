@@ -17,10 +17,6 @@ provides: [MooWebSocket]
 */
 
 
-
-
-
-
 var MooWebSocket = new Class({
     Implements: [Options, Events],
 

@@ -16,6 +16,11 @@ provides: [MooWebSocket]
 ...
 */
 
+
+
+
+
+
 var MooWebSocket = new Class({
     Implements: [Options, Events],
 
@@ -77,7 +82,7 @@ var MooWebSocket = new Class({
     connect: function() {
         if (this.cnx === null || (this.cnx && this.cnx.readyState > this.cnx.OPEN)) {
             this.fireEvent('onConnect');
-           
+
             if (WebSocket) {
                 this.cnx = new WebSocket(this.address);
 
